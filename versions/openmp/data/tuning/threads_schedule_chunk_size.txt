@@ -1,0 +1,1021 @@
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_NUM_THREADS=1
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.168612 ms
+Tempo (clock): 1.092000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.146086 ms
+Tempo (clock): 1.037000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 0.986821 ms
+Tempo (clock): 0.893000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.206953 ms
+Tempo (clock): 1.093000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.206486 ms
+Tempo (clock): 1.074000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.090472 ms
+Tempo (clock): 1.058000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.300618 ms
+Tempo (clock): 1.177000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.153785 ms
+Tempo (clock): 1.121000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.162695 ms
+Tempo (clock): 1.052000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 1
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.401824 ms
+Tempo (clock): 1.269000 ms
+
+
+
+
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$  export OMP_NUM_THREADS=2
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.001679 ms
+Tempo (clock): 0.979000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.363172 ms
+Tempo (clock): 1.234000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.344724 ms
+Tempo (clock): 1.536000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.147083 ms
+Tempo (clock): 1.037000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.109510 ms
+Tempo (clock): 1.002000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.653876 ms
+Tempo (clock): 2.555000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.219310 ms
+Tempo (clock): 1.104000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.218203 ms
+Tempo (clock): 1.103000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.291522 ms
+Tempo (clock): 1.169000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 2
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 0.981639 ms
+Tempo (clock): 1.252000 ms
+
+
+
+
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$  export OMP_NUM_THREADS=4
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.060852 ms
+Tempo (clock): 0.960000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.191511 ms
+Tempo (clock): 1.093000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.295245 ms
+Tempo (clock): 1.188000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.099626 ms
+Tempo (clock): 0.995000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.042413 ms
+Tempo (clock): 0.943000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.168160 ms
+Tempo (clock): 1.790000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.185770 ms
+Tempo (clock): 1.073000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.080412 ms
+Tempo (clock): 0.995000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 0.978276 ms
+Tempo (clock): 0.900000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 4
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.120877 ms
+Tempo (clock): 2.708000 ms
+
+
+
+
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$  export OMP_NUM_THREADS=8
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 1.497286 ms
+Tempo (clock): 3.371000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 62.120319 ms
+Tempo (clock): 394.424000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 67.265184 ms
+Tempo (clock): 392.589000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 64.338856 ms
+Tempo (clock): 368.572000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 55.697604 ms
+Tempo (clock): 338.819000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 72.166204 ms
+Tempo (clock): 422.137000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 59.987131 ms
+Tempo (clock): 362.963000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 52.014781 ms
+Tempo (clock): 342.013000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 68.224747 ms
+Tempo (clock): 428.514000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 8
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 61.616373 ms
+Tempo (clock): 396.688000 ms
+
+
+
+
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$  export OMP_NUM_THREADS=16
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 27.931807 ms
+Tempo (clock): 41.779000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 28.839499 ms
+Tempo (clock): 42.744000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 29.281464 ms
+Tempo (clock): 42.937000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 27.452096 ms
+Tempo (clock): 42.368000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="static, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 29.114906 ms
+Tempo (clock): 42.822000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 32"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 26.009412 ms
+Tempo (clock): 42.371000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 64"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 27.314074 ms
+Tempo (clock): 39.524000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 128"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 28.466284 ms
+Tempo (clock): 41.993000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 256"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 27.757381 ms
+Tempo (clock): 41.649000 ms
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ export OMP_SCHEDULE="dynamic, 512"
+robert@Robert:~/concurrent_and_distributed_programming/versions/openmp$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./assigns.csv ./centroids.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (OpenMP)
+N=10000 K=4 max_iter=50 eps=1e-06
+Número de threads: 16
+Iterações: 12 | SSE final: 135573.865418
+Tempo (omp_get_wtime): 29.074750 ms
+Tempo (clock): 42.577000 ms

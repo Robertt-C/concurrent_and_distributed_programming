@@ -1,0 +1,50 @@
+robert@Robert:~/concurrent_and_distributed_programming/versions/sequential$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./data/assigns_1.csv ./data/centroids_1.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (naive)
+N=10000 K=4 max_iter=50 eps=1e-06
+Iterações: 12 | SSE final: 135573.865418 | Tempo: 0.963000 ms
+
+robert@Robert:~/concurrent_and_distributed_programming/versions/sequential$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./data/assigns_2.csv ./data/centroids_2.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (naive)
+N=10000 K=4 max_iter=50 eps=1e-06
+Iterações: 12 | SSE final: 135573.865418 | Tempo: 0.981000 ms
+
+robert@Robert:~/concurrent_and_distributed_programming/versions/sequential$ ./a.out ../../data/data/points_10000.csv ../../data/data/centers_4.csv 50 0.000001 ./data/assigns_3.csv ./data/centroids_3.csv
+Iteracao 1: SSE = 1494166.087593
+Iteracao 2: SSE = 415074.839994
+Iteracao 3: SSE = 156056.908211
+Iteracao 4: SSE = 135873.171657
+Iteracao 5: SSE = 135683.102384
+Iteracao 6: SSE = 135620.878542
+Iteracao 7: SSE = 135593.573303
+Iteracao 8: SSE = 135579.565627
+Iteracao 9: SSE = 135574.878982
+Iteracao 10: SSE = 135574.162487
+Iteracao 11: SSE = 135573.961586
+Iteracao 12: SSE = 135573.865418
+K-means 1D (naive)
+N=10000 K=4 max_iter=50 eps=1e-06
+Iterações: 12 | SSE final: 135573.865418 | Tempo: 0.854000 ms
